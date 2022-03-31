@@ -10,20 +10,22 @@ app.get('/', (req, res) => {
 });
 // GET/SEND file
 app.get('/second', (req, res) => {
-  res.sendfile('pages/secondpage.html')
+  res.sendfile('src/views/pages/')
 });
 
 // Call Public Static
 app.use('/public', express.static(process.cwd() + '/public'));
+// Call Public Static
+app.use('/src/cdn', express.static(process.cwd() + '/src/cdn'));
 
 // Handle 404
 app.use(function(req, res) {
-  res.sendfile('errors/404.htm', 404);
+  res.sendfile('src/errorshandlers/404.htm', 404);
 });
 
 // Handle 500
 app.use(function(error, req, res, next) {
-  res.sendfile('errors/500.htm', 500);
+  res.sendfile('src/errors/404.htm', 500);
 });
 //listen on ports and give serverstart and serverready
 app.listen(3000, () => {
