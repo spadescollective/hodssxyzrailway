@@ -73,28 +73,28 @@ img {
    }
 /* minimalist design */ 
 html::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
     
   }
 
   html::-webkit-scrollbar-track {
-    background: rgb(179, 177, 177);
-    border-radius: 10px;
+    background: rgb(218, 215, 215);
+    border-radius: 3px;
 }
 
   html::-webkit-scrollbar-thumb {
-    background: rgb(136, 136, 136);
-    border-radius: 10px;
+    background: rgb(158, 158, 158);
+    border-radius: 3px;
   }
 
   html::-webkit-scrollbar-thumb:hover {
-    background: rgb(100, 100, 100);
-    border-radius: 10px;
+    background: rgb(145, 145, 145);
+    border-radius: 3px;
   }
 
   html::-webkit-scrollbar-thumb:active {
-    background: rgb(68, 68, 68);
-    border-radius: 10px;
+    background: rgb(115, 115, 115);
+    border-radius: 3px;
   }
 
 

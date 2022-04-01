@@ -9,8 +9,13 @@ app.get('/', (req, res) => {
   res.sendfile('src/views/pages/landing.htm')
 });
 // GET/SEND file
-app.get('/second', (req, res) => {
-  res.sendfile('src/views/pages/')
+app.get('/portfolio', (req, res) => {
+  res.sendfile('src/views/pages/portfolio.html')
+});
+
+// GET/SEND file
+app.get('/license', (req, res) => {
+  res.sendfile('src/views/pages/license.htm')
 });
 
 // Call Public Static
