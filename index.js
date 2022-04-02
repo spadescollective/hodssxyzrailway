@@ -18,6 +18,11 @@ app.get('/license', (req, res) => {
   res.sendfile('src/views/pages/license.htm')
 });
 
+app.get('/standwithukraine', (req, res) => {
+  res.sendfile('src/views/blog/ukraine.html')
+});
+
+
 // Call Public Static
 app.use('/public', express.static(process.cwd() + '/public'));
 // Call Public Static
