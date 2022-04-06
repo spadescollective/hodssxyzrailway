@@ -22,6 +22,21 @@ app.get('/standwithukraine', (req, res) => {
   res.sendfile('src/views/blog/ukraine.html')
 });
 
+app.get('/imagedesigners', (req, res) => {
+  res.sendfile('src/views/pages/ineed.htm')
+});
+
+app.get('/src/cdn/', (req, res) => {
+  res.sendfile('')
+});
+
+app.get('/src/', (req, res) => {
+  res.sendfile('')
+});
+
+app.get('/new', (req, res) => {
+  res.sendfile('src/views/pages/newsite.html')
+});
 
 // Call Public Static
 app.use('/public', express.static(process.cwd() + '/public'));
@@ -39,8 +54,5 @@ app.use(function(error, req, res, next) {
 });
 //listen on ports and give serverstart and serverready
 app.listen(3000, () => {
-  console.log('Server Ready');
-  console.log('Server Start');
-  console.log('Ignore deprecation messages below this one');
-  
+  console.log('Server Started, await res.sendfile');
 });
