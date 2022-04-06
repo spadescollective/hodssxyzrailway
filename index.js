@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 //Deprecation of res.sendfile is invalid, "sendFile" is currently not working, so ignore the console log, as it's not true.
 
-// GET / file/index landing
+// GET / file/index landing /
 app.get('/', (req, res) => {
   res.sendfile('src/views/pages/landing.htm')
 });
