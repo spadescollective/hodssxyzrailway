@@ -42,6 +42,7 @@ app.get('/new', (req, res) => {
 app.use('/public', express.static(process.cwd() + '/public'));
 // Call Public Static
 app.use('/src/cdn', express.static(process.cwd() + '/src/cdn'));
+app.use('/src/misc', express.static(process.cwd() + '/src/misc'));
 
 // Handle 404
 app.use(function(req, res) {
