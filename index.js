@@ -38,6 +38,11 @@ app.get('/new', (req, res) => {
   res.sendfile('src/views/pages/newsite.html')
 });
 
+app.get('/tsscac', (req, res) => {
+  res.sendfile('src/misc/tsscac/tsscac.html')
+});
+
+//src/misc/tsscac/agr0001.md
 // Call Public Static
 app.use('/public', express.static(process.cwd() + '/public'));
 // Call Public Static
