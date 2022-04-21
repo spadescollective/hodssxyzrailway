@@ -42,6 +42,9 @@ app.get('/tsscac', (req, res) => {
   res.sendfile('src/misc/tsscac/tsscac.html')
 });
 
+app.get('/privacy', (req, res) => {
+  res.sendfile('src/views/pages/privacy.html')
+});
 //src/misc/tsscac/agr0001.md
 // Call Public Static
 app.use('/public', express.static(process.cwd() + '/public'));
